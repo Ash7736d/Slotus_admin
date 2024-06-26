@@ -19,7 +19,7 @@ function checkStuff() {
   
   if (email.value == "") {
     msg.style.display = 'block';
-    msg.innerHTML = "Please enter your email";
+    msg.innerHTML = "𝗣𝗹𝗲𝗮𝘀𝗲 𝗲𝗻𝘁𝗲𝗿 𝘆𝗼𝘂𝗿 𝘂𝘀𝗲𝗿𝗻𝗮𝗺𝗲";
     email.focus();
     return false;
   } else {
@@ -27,7 +27,7 @@ function checkStuff() {
   }
   
    if (password.value == "") {
-    msg.innerHTML = "Please enter your password";
+    msg.innerHTML = "𝗣𝗹𝗲𝗮𝘀𝗲 𝗲𝗻𝘁𝗲𝗿 𝘆𝗼𝘂𝗿 𝗽𝗮𝘀𝘀𝘄𝗼𝗿𝗱";
     password.focus();
     return false;
   } else {
@@ -35,7 +35,7 @@ function checkStuff() {
   }
    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (!re.test(email.value)) {
-    msg.innerHTML = "Please enter a valid email";
+    msg.innerHTML = "𝗣𝗹𝗲𝗮𝘀𝗲 𝗲𝗻𝘁𝗲𝗿 𝗮 𝘃𝗮𝗹𝗶𝗱 𝘂𝘀𝗲𝗿𝗻𝗮𝗺𝗲";
     email.focus();
     return false;
   } else {
