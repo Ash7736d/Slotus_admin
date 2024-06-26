@@ -34,7 +34,7 @@ body, html {
   border-bottom: 10px solid #8BD17C;
   width: 400px;
   height: 500px;
-  box-shadow: 1px 1px 108.8px 19.2px rgb(0,0,0);
+  box-shadow: 5px 5px 110.8px 25.2px rgb(0,0,0);
 }
 
 .box h4 {
@@ -205,10 +205,11 @@ label span {
 }
 
 .adminb {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   position: absolute; /* Position the image absolutely within the nearest positioned ancestor */
-  top: 70px; /* Set the top position */
+  left: -20px;
+  top: 90px; /* Set the top position */
   z-index: 999; /* Ensure it is above other elements */
 }
 
