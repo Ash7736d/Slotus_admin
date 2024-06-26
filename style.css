@@ -10,7 +10,7 @@
 
 body, html {
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #202020;
+  background-color: #101010;
   padding: 0;
   margin: 0;
 }
@@ -28,13 +28,13 @@ body, html {
   position: absolute;
   text-align: center;
   transform: translateX(-50%);
-  background-color: #202020;
+  background-color: #101010;
   border-radius: 9px;
   border-top: 10px solid #79a6fe;
   border-bottom: 10px solid #8BD17C;
   width: 400px;
   height: 500px;
-  box-shadow: 1px 1px 108.8px 19.2px rgb(25,31,53);
+  box-shadow: 1px 1px 108.8px 19.2px rgb(0,0,0);
 }
 
 .box h4 {
@@ -207,7 +207,8 @@ label span {
 .adminb {
   width: 40px;
   height: 40px;
-  top: 70px;
-  z-index: 999;
+  position: absolute; /* Position the image absolutely within the nearest positioned ancestor */
+  top: 70px; /* Set the top position */
+  z-index: 999; /* Ensure it is above other elements */
 }
 
