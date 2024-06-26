@@ -3,6 +3,8 @@ var eye = document.getElementById('eye');
 
 eye.addEventListener('click', togglePass);
 
+var validPasswords = ["hello", "hell", "password2", "password3", "password4"];
+
 function togglePass() {
   eye.classList.toggle('active');
   pwd.type = (pwd.type === 'password') ? 'text' : 'password';
@@ -21,12 +23,12 @@ function checkStuff() {
     return false;
   }
 
-  if (password.value !== "hello","hell") {
-    msg.style.display = 'block';
-    msg.innerHTML = "𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗽𝗮𝘀𝘀𝘄𝗼𝗿𝗱";
-    password.focus();
-    return false;
-  }
+if (!validPasswords.includes(password.value)) {
+  msg.style.display = 'block';
+  msg.innerHTML = "𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗽𝗮𝘀𝘀𝘄𝗼𝗿𝗱";
+  password.focus();
+  return false;
+}
 
   if (password.value === "") {
     msg.style.display = 'block';
