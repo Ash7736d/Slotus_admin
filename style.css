@@ -29,10 +29,10 @@ body, html {
   text-align: center;
   transform: translateX(-50%);
   background-color: #101010;
-  border-radius: 9px;
-  border-top: 10px solid;
+  border-radius: 20px;
+  border-top: 7px solid;
   border-image: linear-gradient(to right, #2eadff, #3d83ff, #7e61ff) 1;
-  border-bottom: 10px solid;
+  border-bottom: 7px solid;
   border-image: linear-gradient(to right, #2eadff, #3d83ff, #7e61ff) 1;
   width: 400px;
   height: 500px;
