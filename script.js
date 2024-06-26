@@ -1,56 +1,52 @@
 var pwd = document.getElementById('pwd');
 var eye = document.getElementById('eye');
 
-eye.addEventListener('click',togglePass);
+eye.addEventListener('click', togglePass);
 
-function togglePass(){
-
-   eye.classList.toggle('active');
-
-   (pwd.type == 'password') ? pwd.type = 'text' : pwd.type = 'password';
+function togglePass() {
+  eye.classList.toggle('active');
+  pwd.type = (pwd.type === 'password') ? 'text' : 'password';
 }
 
 // Form Validation
-
 function checkStuff() {
   var email = document.form1.email;
   var password = document.form1.password;
   var msg = document.getElementById('msg');
-  
-  if (email.value == "") {
+
+  if (email.value === "") {
     msg.style.display = 'block';
     msg.innerHTML = "𝗣𝗹𝗲𝗮𝘀𝗲 𝗲𝗻𝘁𝗲𝗿 𝘆𝗼𝘂𝗿 𝘂𝘀𝗲𝗿𝗻𝗮𝗺𝗲";
     email.focus();
     return false;
-  } else {
-    msg.innerHTML = "";
   }
 
-if (password.value == "hello") {
-    msg.innerHTML = "𝗟𝗼𝗴𝗴𝗲𝗱 𝗶𝗻";
+  if (password.value !== "hello") {
+    msg.style.display = 'block';
+    msg.innerHTML = "𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗽𝗮𝘀𝘀𝘄𝗼𝗿𝗱";
     password.focus();
     return false;
-  } else {
-    msg.innerHTML = "";
   }
-  
-   if (password.value == "") {
+
+  if (password.value === "") {
+    msg.style.display = 'block';
     msg.innerHTML = "𝗣𝗹𝗲𝗮𝘀𝗲 𝗲𝗻𝘁𝗲𝗿 𝘆𝗼𝘂𝗿 𝗽𝗮𝘀𝘀𝘄𝗼𝗿𝗱";
     password.focus();
     return false;
-  } else {
-    msg.innerHTML = "";
   }
-   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (!re.test(email.value)) {
+    msg.style.display = 'block';
     msg.innerHTML = "𝗣𝗹𝗲𝗮𝘀𝗲 𝗲𝗻𝘁𝗲𝗿 𝗮 𝘃𝗮𝗹𝗶𝗱 𝘂𝘀𝗲𝗿𝗻𝗮𝗺𝗲";
     email.focus();
     return false;
-  } else {
-    msg.innerHTML = "";
   }
-}
 
+  // If all validations pass, clear any error message
+  msg.innerHTML = "";
+  return true;
+}
 // ParticlesJS
 
 // ParticlesJS Config.
