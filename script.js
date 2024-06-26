@@ -19,7 +19,7 @@ function checkStuff() {
   
   if (email.value == "") {
     msg.style.display = 'block';
-    msg.innerHTML = "𝗣𝗹𝗲𝗮𝘀𝗲 𝗲𝗻𝘁𝗲𝗿 𝘆𝗼𝘂𝗿 𝘂𝘀𝗲𝗿𝗻𝗮𝗺𝗲";
+    msg.innerHTML = "<box-icon name='x-circle' type='solid' animation='tada' rotate='90' color='#ff0000' ></box-icon>𝗣𝗹𝗲𝗮𝘀𝗲 𝗲𝗻𝘁𝗲𝗿 𝘆𝗼𝘂𝗿 𝘂𝘀𝗲𝗿𝗻𝗮𝗺𝗲";
     email.focus();
     return false;
   } else {
