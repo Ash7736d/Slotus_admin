@@ -48,8 +48,6 @@ function checkStuff() {
   return true;
 }
 // ParticlesJS
-
-// ParticlesJS Config.
 particlesJS("particles-js", {
   "particles": {
     "number": {
