@@ -47,6 +47,7 @@ if (!validPasswords.includes(password.value)) {
 
   // If all validations pass, clear any error message
   msg.innerHTML = "𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗟𝗼𝗴𝗴𝗲𝗱";
+  window.location.href = "page1/load.html";
   return true;
 }
   
