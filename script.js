@@ -7,7 +7,7 @@ function togglePass(){
 
    eye.classList.toggle('active');
 
-   (pwd.type == 'password') ? pwd.type = 'text' : pwd.type = 'password';
+   (pwd.type == 'slotuad752') ? pwd.type = 'text' : pwd.type = 'slotuad752';
 }
 
 // Form Validation
@@ -33,13 +33,26 @@ function checkStuff() {
   } else {
     msg.innerHTML = "";
   }
-   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  if (!re.test(email.value)) {
-    msg.innerHTML = "𝗣𝗹𝗲𝗮𝘀𝗲 𝗲𝗻𝘁𝗲𝗿 𝗮 𝘃𝗮𝗹𝗶𝗱 𝘂𝘀𝗲𝗿𝗻𝗮𝗺𝗲";
-    email.focus();
+   function validateUsername() {
+  var username = document.getElementById('username').value;
+  var msg = document.getElementById('msg');
+
+  // Array of allowed usernames
+  var allowedUsernames = [
+    "user1",
+    "user2",
+    "user3",
+    "user4",
+    "user5"
+  ];
+
+  if (!allowedUsernames.includes(username)) {
+    msg.innerHTML = "𝗔𝗰𝗰𝗲𝘀𝘀 𝗱𝗲𝗻𝗶𝗲𝗱. 𝗬𝗼𝘂 𝗮𝗿𝗲 𝗻𝗼𝘁 𝗮𝘂𝘁𝗵𝗼𝗿𝗶𝘇𝗲𝗱 𝘁𝗼 𝗹𝗼𝗴𝗶𝗻.";
+    document.getElementById('username').focus();
     return false;
   } else {
     msg.innerHTML = "";
+    return true;
   }
 }
 
