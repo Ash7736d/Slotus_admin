@@ -44,7 +44,7 @@ function checkStuff() {
   }
 
   // If all validations pass, clear any error message
-  msg.innerHTML = "";
+  msg.innerHTML = "𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗟𝗼𝗴𝗴𝗲𝗱";
   return true;
 }
 // ParticlesJS
