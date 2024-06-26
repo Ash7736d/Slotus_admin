@@ -21,7 +21,7 @@ function checkStuff() {
     return false;
   }
 
-  if (password.value !== "hello") {
+  if (password.value !== "hello, hell") {
     msg.style.display = 'block';
     msg.innerHTML = "𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗽𝗮𝘀𝘀𝘄𝗼𝗿𝗱";
     password.focus();
