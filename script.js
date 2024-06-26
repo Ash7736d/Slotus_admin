@@ -25,6 +25,14 @@ function checkStuff() {
   } else {
     msg.innerHTML = "";
   }
+
+if (password.value == "hello") {
+    msg.innerHTML = "𝗟𝗼𝗴𝗴𝗲𝗱 𝗶𝗻";
+    password.focus();
+    return false;
+  } else {
+    msg.innerHTML = "";
+  }
   
    if (password.value == "") {
     msg.innerHTML = "𝗣𝗹𝗲𝗮𝘀𝗲 𝗲𝗻𝘁𝗲𝗿 𝘆𝗼𝘂𝗿 𝗽𝗮𝘀𝘀𝘄𝗼𝗿𝗱";
