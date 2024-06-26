@@ -53,8 +53,6 @@ msg.innerHTML = "𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗟𝗼𝗴�
 setTimeout(function() {
   window.location.href = "page1/load.html";
 }, 1000); // 1000 milliseconds = 1 second delay
-
-return true;
   
 // ParticlesJS
 particlesJS("particles-js", {
