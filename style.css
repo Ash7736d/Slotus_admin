@@ -17,17 +17,8 @@ body, html {
 
 #particles-js {
   position: absolute;
-  top: -100%; /* Start particles above the visible area */
-  left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000; /* Background color for particles container */
-  z-index: -1; /* Ensure particles are behind other content */
-  transition: top 1s ease-in-out; /* Smooth sliding animation */
-}
-
-#particles-js.loaded {
-  top: 0; /* Slide particles into view */
 }
 
 .container{
