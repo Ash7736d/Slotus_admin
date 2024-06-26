@@ -31,9 +31,9 @@ body, html {
   background-color: #101010;
   border-radius: 9px;
   border-top: 10px solid;
-  border-image: linear-gradient(to right, #ffcc00, #ff6666) 1;
+  border-image: linear-gradient(to right, #2eadff, #3d83ff, #7e61ff) 1;
   border-bottom: 10px solid;
-  border-image: linear-gradient(to right, #3399ff, #ff99cc) 1;
+  border-image: linear-gradient(to right, #2eadff, #3d83ff, #7e61ff) 1;
   width: 400px;
   height: 500px;
   box-shadow: 5px 5px 110.8px 25.2px rgb(0,0,0);
@@ -207,11 +207,11 @@ label span {
 }
 
 .adminb {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   position: absolute; /* Position the image absolutely within the nearest positioned ancestor */
   left: 170px;
-  top: -10px; /* Set the top position */
+  top: 30px; /* Set the top position */
   z-index: 999; /* Ensure it is above other elements */
 }
 
