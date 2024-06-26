@@ -203,3 +203,9 @@ label span {
 .footer .fa {
   color: #7f5feb;;
 }
+
+.goldbadge {
+  width: 90%;
+  height: 90%;
+  z-index: 999;
+}
