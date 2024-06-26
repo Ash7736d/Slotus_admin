@@ -204,8 +204,8 @@ label span {
   color: #7f5feb;;
 }
 
-.goldbadge {
-  width: 20%;
-  height: 20%;
-  z-index: 9999;
+.adminb {
+  width: 20px;
+  height: 20px;
+  z-index: 999;
 }
