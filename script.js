@@ -103,17 +103,20 @@ particlesJS("particles-js", {
       "width": 2
     },
     "move": {
-  "enable": true,
-  "speed": 1.5,
-  "direction": "bottom", // Change direction to bottom or any other suitable direction
-  "random": false,
-  "straight": true, // Ensure particles move straight towards the direction
-  "out_mode": "out",
-  "bounce": false,
-  "attract": {
-    "enable": false
-  }
-}, 
+      "enable": true,
+      "speed": 1.5,
+      "direction": "top",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
   "interactivity": {
     "detect_on": "canvas",
     "events": {
