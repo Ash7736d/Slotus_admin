@@ -30,8 +30,15 @@ body, html {
   transform: translateX(-50%);
   background-color: #101010;
   border-radius: 9px;
-  border-top: 10px solid #79a6fe;
-  border-bottom: 10px solid #8BD17C;
+  /* Define linear gradient for top border */
+border-image: linear-gradient(to right, #2eadff, #3d83ff, #7e61ff) 1;
+border-style: solid;
+border-top-width: 10px;
+
+/* Define linear gradient for bottom border */
+border-image: linear-gradient(to right, #79a6fe, #8BD17C) 1;
+border-style: solid;
+border-bottom-width: 10px;
   width: 400px;
   height: 500px;
   box-shadow: 5px 5px 110.8px 25.2px rgb(0,0,0);
@@ -208,8 +215,8 @@ label span {
   width: 50px;
   height: 50px;
   position: absolute; /* Position the image absolutely within the nearest positioned ancestor */
-  left: 100px;
-  top: -30px; /* Set the top position */
+  left: 150px;
+  top: -70px; /* Set the top position */
   z-index: 999; /* Ensure it is above other elements */
 }
 
