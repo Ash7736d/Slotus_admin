@@ -46,9 +46,16 @@ if (!validPasswords.includes(password.value)) {
   }
 
   // If all validations pass, clear any error message
-  msg.innerHTML = "𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗟𝗼𝗴𝗴𝗲𝗱";
-  return true;
-}
+msg.style.display = 'block';
+msg.innerHTML = "𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗟𝗼𝗴𝗴𝗲𝗱";
+
+// Redirect to another page after a short delay
+setTimeout(function() {
+  window.location.href = "page1/load.html";
+}, 1000); // 1000 milliseconds = 1 second delay
+
+return true;
+  
 // ParticlesJS
 particlesJS("particles-js", {
   "particles": {
