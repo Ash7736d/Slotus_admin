@@ -205,7 +205,7 @@ label span {
 }
 
 .goldbadge {
-  width: 90%;
-  height: 90%;
-  z-index: 999;
+  width: 20%;
+  height: 20%;
+  z-index: 9999;
 }
