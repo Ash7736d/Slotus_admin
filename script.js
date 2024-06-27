@@ -1,9 +1,8 @@
 var pwd = document.getElementById('pwd');
 var eye = document.getElementById('eye');
+var validPasswords = ["hello", "hell", "password2", "password3", "password4"];
 
 eye.addEventListener('click', togglePass);
-
-var validPasswords = ["hello", "hell", "password2", "password3", "password4"];
 
 function togglePass() {
   eye.classList.toggle('active');
@@ -23,12 +22,12 @@ function checkStuff() {
     return false;
   }
 
-if (!validPasswords.includes(password.value)) {
-  msg.style.display = 'block';
-  msg.innerHTML = "𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗽𝗮𝘀𝘀𝘄𝗼𝗿𝗱";
-  password.focus();
-  return false;
-}
+  if (!validPasswords.includes(password.value)) {
+    msg.style.display = 'block';
+    msg.innerHTML = "𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗽𝗮𝘀𝘀𝘄𝗼𝗿𝗱";
+    password.focus();
+    return false;
+  }
 
   if (password.value === "") {
     msg.style.display = 'block';
@@ -47,8 +46,12 @@ if (!validPasswords.includes(password.value)) {
 
   // If all validations pass, clear any error message
   msg.innerHTML = "𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗟𝗼𝗴𝗴𝗲𝗱";
+  
+  // Redirect to new page
   window.location.href = "page1/index.html";
-  return true;
+  
+  // Prevent default form submission
+  return false;
 }
   
 // ParticlesJS
