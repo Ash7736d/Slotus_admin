@@ -35,8 +35,8 @@ body, html {
   background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% ); /* Three-line gradient */
   -webkit-background-clip: text;
   color: transparent;
-  transform: translate3d(0, 0, 0) scale(0.95);
-  filter: blur(2px);
+  transform: translate3d(1, 1, 1) scale(0.95);
+  filter: blur(1px);
 }
 
 @keyframes blink-caret {
