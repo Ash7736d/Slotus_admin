@@ -15,14 +15,6 @@ body, html {
   margin: 0;
 }
 
-.h5 {
-  top: 50px;
-  left: 50px;
-  position: absolute;
-  text-align: center;
-  color: #fff;
-}
-
 .loader {
   margin: 0;
   top: 50px;
