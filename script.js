@@ -45,16 +45,14 @@ function checkStuff() {
   }
 
   // If all validations pass, clear any error message
-msg.innerHTML = "𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗟𝗼𝗴𝗴𝗲𝗱";
-
-// Refresh the main page
-window.location.reload();
-
-// Redirect to new page after refresh
-window.location.href = "page1/loading.html";
-
-// Prevent default form submission
-return false;
+  msg.innerHTML = "𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗟𝗼𝗴𝗴𝗲𝗱";
+  
+  // Redirect to new page
+  window.location.href = "page1/loading.html";
+  
+  // Prevent default form submission
+  return false;
+}
   
 // ParticlesJS
 particlesJS("particles-js", {
