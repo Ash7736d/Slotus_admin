@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const texts = ["Loading Data.", "Fetching User Data", "Building Guild Request", "Setting Up Database"];
+  const texts = ["Loading Data..", "Fetching User Data..", "Building Guild Request..", "Setting Up Database.."];
   let index = 0;
 
   function typeWriter(text, i, fnCallback) {
