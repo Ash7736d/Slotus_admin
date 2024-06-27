@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
       if (width >= 100) {
         clearInterval(interval);
         setTimeout(function() {
-          window.location.href = 'admin/Dashboard.html';
+          window.location.href = 'admin/index.html';
         }, 500);
       } else {
         width++;
