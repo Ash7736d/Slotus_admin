@@ -10,7 +10,7 @@
 
 body, html {
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #101010;
+  background-image: "https://cdn.discordapp.com/attachments/1181395161138331648/1255677099910631545/c518dccf7b7d73f703112b2a72eacdab_t4.mp4?ex=667dffed&is=667cae6d&hm=01b33780cfafedec12b934dd10b7f850dc18c42e850ca715d60d0725fc976a33&";
   padding: 0;
   margin: 0;
 }
@@ -28,7 +28,7 @@ body, html {
   position: absolute;
   text-align: center;
   transform: translateX(-50%);
-  background-color: #101010;
+  background-image: "https://cdn.discordapp.com/attachments/1181395161138331648/1255676681444655135/14d0b29ebaacb3285acbd47ced986a14.jpg?ex=667dff8a&is=667cae0a&hm=8cc4b85a51966189f3a3f8c4f571ce8fba9ca6f785534e9db3b30a7cfd8434a4&";
   border-radius: 20px;
   border-top: 7px solid;
   border-image: linear-gradient(to right, #2eadff, #3d83ff, #7e61ff) 1;
