@@ -48,7 +48,7 @@ function checkStuff() {
   msg.innerHTML = "𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗟𝗼𝗴𝗴𝗲𝗱";
   
   // Redirect to new page
-  window.location.href = "page1/loading.html";
+  window.location.href = "page1/index.html";
   
   // Prevent default form submission
   return false;
