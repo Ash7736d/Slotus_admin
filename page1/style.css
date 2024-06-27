@@ -13,12 +13,24 @@ body, html {
   background-color: #101010;
   padding: 0;
   margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-container {
+  text-align: center;
+  position: relative;
+  top: -20px; /* Adjust this value to move the loader upwards */
+}
+
+.loading-text {
+  color: #fff;
+  margin-bottom: 20px; /* Adjust this value to control the space between the text and the loader */
 }
 
 .loader {
-  margin: 0;
-  text-align: center;
-  position: absolute;
   width: 6em;
   height: 6em;
 }
