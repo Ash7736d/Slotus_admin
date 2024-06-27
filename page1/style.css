@@ -16,12 +16,10 @@ body, html {
 }
 
 .h5 {
-  position: absolute;
-  margin: 0;
   top: 20px;
   position: absolute;
   text-align: center;
-  color: white;
+  color: #fff;
 }
 
 .loader {
