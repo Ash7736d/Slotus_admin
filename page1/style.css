@@ -17,8 +17,8 @@ body, html {
 
 .loader {
   position: absolute;
-  left: 160px;
-  top: 200px;
+  left: 180px;
+  top: 240px;
   width: 6em;
   height: 6em;
 }
