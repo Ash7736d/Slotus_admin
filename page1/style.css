@@ -15,8 +15,12 @@ body, html {
   margin: 0;
 }
 
+.h2 {
+  position: relative;
+}
+
 .loader {
-  position: absolute;
+  position: relative;
   left: 180px;
   top: 240px;
   width: 6em;
