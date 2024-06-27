@@ -58,12 +58,12 @@ body, html {
 
 .loader-ring-b {
   animation-name: ringB;
-  stroke: #5E14E4;
+  stroke: #00dbde;
 }
 
 .loader-ring-c {
   animation-name: ringC;
-  stroke: #9708F4;
+  stroke: #00dbde;
 }
 
 .loader-ring-d {
