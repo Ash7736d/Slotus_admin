@@ -29,7 +29,7 @@ body, html {
   text-align: center;
   transform: translateX(-50%);
   background-image: url("https://cdn.discordapp.com/attachments/1181395161138331648/1255676681444655135/14d0b29ebaacb3285acbd47ced986a14.jpg?ex=667dff8a&is=667cae0a&hm=8cc4b85a51966189f3a3f8c4f571ce8fba9ca6f785534e9db3b30a7cfd8434a4&");
-  border-radius: 20px;
+  border-radius: 10px;
   border-top: 7px solid;
   border-image: linear-gradient(to right, #2eadff, #3d83ff, #7e61ff) 1;
   border-bottom: 7px solid;
