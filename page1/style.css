@@ -36,12 +36,6 @@ body, html {
   -webkit-background-clip: text;
   color: transparent;
   font-weight: 700;
-  text-shadow:
-    0 0 5px rgba(252, 0, 255, 0.7),
-    0 0 10px rgba(252, 0, 255, 0.7),
-    0 0 20px rgba(252, 0, 255, 0.7),
-    0 0 40px rgba(0, 219, 222, 0.7),
-    0 0 80px rgba(0, 219, 222, 0.7);
 }
 
 @keyframes blink-caret {
