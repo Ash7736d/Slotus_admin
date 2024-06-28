@@ -736,7 +736,7 @@ button .span-mother2 span:nth-child(6) {
   top: 0;
   left: 0;
   font-size: 16px;
-  color: #174676;
+  color: rgba(204, 204, 204, 0);
   pointer-events: none;
   transition: all 0.3s ease;
 }
@@ -762,4 +762,5 @@ button .span-mother2 span:nth-child(6) {
 .input-field:focus + .input-label + .input-highlight {
   width: 100%;
 }
+
 
