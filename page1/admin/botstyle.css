@@ -625,7 +625,7 @@ body{
 .button-container {
             display: flex;
             gap: 10px; /* Adjust the gap between buttons as needed */
-}
+        }
 
         button {
             font-weight: bold;
@@ -639,6 +639,10 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        .red-button {
+            background-color: red;
         }
 
         button .span-mother {
