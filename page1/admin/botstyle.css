@@ -625,10 +625,6 @@ body{
 .button-container {
             display: flex;
             gap: 10px; /* Adjust the gap between buttons as needed */
-        }
-
-.button-red {
-	color: #ff0000;
 }
 
         button {
