@@ -7,17 +7,18 @@ async function addBalance() {
         return;
     }
 
-    try {
-        const response = await fetch('http://your-server-ip:3000/add-balance', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ userId, amount }),
-        });
+    const uri = "mongodb+srv://alternoteamnexus:XWSDVIjEImvH9Dlg@nexuseconomypeoject.69cjkla.mongodb.net/";
 
-        const result = await response.json();
-        alert(result.message);
+    try {
+        const mongoClient = new MongoClient(uri);
+        await mongoClient.connect();
+        const database = mongoClient.db("cluster1");
+        const updatesCollection = database.collection("pendingUpdates");
+
+        await updatesCollection.insertOne({ user_id: userId, amount });
+        alert('Balance update request submitted successfully');
+
+        await mongoClient.close();
     } catch (error) {
         console.error('Error adding balance:', error);
         alert('There was an error adding balance. Please try again later.');
