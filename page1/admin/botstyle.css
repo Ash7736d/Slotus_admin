@@ -627,6 +627,10 @@ body{
             gap: 10px; /* Adjust the gap between buttons as needed */
         }
 
+.button-red {
+	background-color: #ff0000;
+}
+
         button {
             font-weight: bold;
             color: white;
