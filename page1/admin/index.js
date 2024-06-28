@@ -1,24 +1,13 @@
 const sideLinks = document.querySelectorAll('.sidebar .side-menu li a:not(.logout)');
-const mainContent = document.getElementById('main-content');
-const botContent = document.getElementById('bot-content');
 
 sideLinks.forEach(item => {
     const li = item.parentElement;
     item.addEventListener('click', () => {
         sideLinks.forEach(i => {
             i.parentElement.classList.remove('active');
-        });
+        })
         li.classList.add('active');
-
-        // Hide all content sections
-        document.querySelectorAll('main').forEach(main => {
-            main.style.display = 'none';
-        });
-
-        // Show the clicked section
-        const target = item.getAttribute('href').substring(1) + '-content';
-        document.getElementById(target).style.display = 'block';
-    });
+    })
 });
 
 const menuBar = document.querySelector('.content nav .bx.bx-menu');
@@ -34,7 +23,7 @@ const searchForm = document.querySelector('.content nav form');
 
 searchBtn.addEventListener('click', function (e) {
     if (window.innerWidth < 576) {
-        e.preventDefault();
+        e.preventDefault;
         searchForm.classList.toggle('show');
         if (searchForm.classList.contains('show')) {
             searchBtnIcon.classList.replace('bx-search', 'bx-x');
