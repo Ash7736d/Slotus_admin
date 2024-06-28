@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    --light: #f6f6f9;
+    --light: #363949;
     --primary: #1976D2;
-    --light-primary: #CFE8FF;
+    --light-primary: #AAAAAA;
     --grey: #eee;
     --dark-grey: #AAAAAA;
     --dark: #363949;
@@ -709,5 +709,57 @@ button .span-mother2 span:nth-child(5) {
 
 button .span-mother2 span:nth-child(6) {
   transition: 0.7s;
+}
+
+	
+/* Input container */
+.input-container {
+  position: relative;
+  margin: 20px;
+}
+
+/* Input field */
+.input-field {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background-color: transparent;
+}
+
+/* Input label */
+.input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: rgba(204, 204, 204, 0);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* Input highlight */
+.input-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #007bff;
+  transition: all 0.3s ease;
+}
+
+/* Input field:focus styles */
+.input-field:focus + .input-label {
+  top: -20px;
+  font-size: 12px;
+  color: #007bff;
+}
+
+.input-field:focus + .input-label + .input-highlight {
+  width: 100%;
 }
 
