@@ -7,16 +7,13 @@ async function addBalance() {
         return;
     }
 
-    try {
-        const response = await fetch('http://your-ngrok-url/add-balance', { // Replace 'your-ngrok-url' with your actual Ngrok URL
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ userId, amount }),
-        });
+    const app = new Realm.App({ id: "application-1-yhwxffq" }); // Replace with your Realm App ID
 
-        const result = await response.json();
+    const credentials = Realm.Credentials.anonymous();
+    try {
+        const user = await app.logIn(credentials);
+
+        const result = await user.functions.addBalance(userId, amount);
         alert(result.message);
     } catch (error) {
         console.error('Error adding balance:', error);
