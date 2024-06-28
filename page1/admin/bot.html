@@ -79,39 +79,39 @@
 
             <!-- Insights -->
             <ul class="insights">
-                <li>
-                    
-                    <span class="info">
-                        <h3>
-    <img src="images/coin_Gold-1.png" alt="Coin" style="vertical-align: middle; width: 30px; height: 30px; margin-right: 5px;">
-    𝗔𝗱𝗱 𝗨𝘀𝗲𝗿 𝗕𝗮𝗹𝗮𝗻𝗰𝗲
-</h3>
-                        <div class="input-container">
-  <input placeholder="𝗨𝘀𝗲𝗿 𝗜𝗗:" class="input-field" type="text">
-  <label for="input-field" class="input-label">𝗨𝘀𝗲𝗿 𝗜𝗗</label>
-  <span class="input-highlight"></span>
-</div>
+        <li>
+            <span class="info">
+                <h3>
+                    <img src="images/coin_Gold-1.png" alt="Coin" style="vertical-align: middle; width: 30px; height: 30px; margin-right: 5px;">
+                    Add User Balance
+                </h3>
+                <div class="input-container">
+                    <input id="userId" placeholder="User ID:" class="input-field" type="text">
+                    <label for="userId" class="input-label">User ID</label>
+                    <span class="input-highlight"></span>
+                </div>
 
-                        <div class="input-container">
-  <input placeholder="𝗔𝗺𝗼𝘂𝗻𝘁:" class="input-field" type="text">
-  <label for="input-field" class="input-label">𝗔𝗺𝗼𝘂𝗻𝘁</label>
-  <span class="input-highlight"></span>
-</div>
+                <div class="input-container">
+                    <input id="amount" placeholder="Amount:" class="input-field" type="text">
+                    <label for="amount" class="input-label">Amount</label>
+                    <span class="input-highlight"></span>
+                </div>
 
-                        <button>
-  <span class="span-mother">
-    <span>A</span>
-    <span>d</span>
-    <span>d</span>
-  </span>
-  <span class="span-mother2">
-    <span>A</span>
-    <span>d</span>
-    <span>d</span>
-  </span>
-                        </button>
+                <button onclick="addBalance()">
+                    <span class="span-mother">
+                        <span>A</span>
+                        <span>d</span>
+                        <span>d</span>
                     </span>
-                </li>
+                    <span class="span-mother2">
+                        <span>A</span>
+                        <span>d</span>
+                        <span>d</span>
+                    </span>
+                </button>
+            </span>
+        </li>
+    </ul>
                     <li><i class='bx bxs-user-pin'></i>
                     <span class="info">
                         <h3>
@@ -226,6 +226,7 @@
     </div>
 
     <script src="index.js"></script>
+    <script src="server.js"></script>
 </body>
 
 </html>
