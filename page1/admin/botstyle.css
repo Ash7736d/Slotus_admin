@@ -736,7 +736,7 @@ button .span-mother2 span:nth-child(6) {
   top: 0;
   left: 0;
   font-size: 16px;
-  color: rgba(204, 204, 204, 0);
+  color: #174676;
   pointer-events: none;
   transition: all 0.3s ease;
 }
