@@ -7,11 +7,14 @@ async function addBalance() {
         return;
     }
 
+    const API_KEY = 'j8Mv7yFEJRvvRmEhmZJ5DmruVIHWTRdNpKdkMTJvsVSGBybnW0v2I72ONxQsLWmw';
+
     try {
         const response = await fetch('https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-yhwxffq/endpoint/addBalance', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'api-key': API_KEY,
             },
             body: JSON.stringify({ userId, amount }),
         });
