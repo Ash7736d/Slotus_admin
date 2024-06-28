@@ -7,13 +7,19 @@ async function addBalance() {
         return;
     }
 
-    const app = new Realm.App({ id: "application-1-yhwxffq" }); // Replace with your Realm App ID
+    const apiKey = 'j8Mv7yFEJRvvRmEhmZJ5DmruVIHWTRdNpKdkMTJvsVSGBybnW0v2I72ONxQsLWmw'; // Replace with your actual API key
 
-    const credentials = Realm.Credentials.anonymous();
     try {
-        const user = await app.logIn(credentials);
+        const response = await fetch('https://application-1-yhwxffq.mongodb.com/api/client/v2.0/app/application-1-yhwxffq/functions/call', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${apiKey}`
+            },
+            body: JSON.stringify({ userId, amount }),
+        });
 
-        const result = await user.functions.addBalance(userId, amount);
+        const result = await response.json();
         alert(result.message);
     } catch (error) {
         console.error('Error adding balance:', error);
