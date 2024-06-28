@@ -622,25 +622,29 @@ body{
 
 }
 
-button {
-  font-weight: bold;
-  color: white;
-  border-radius: 2rem;
-  cursor: pointer;
-  width: 95.02px;
-  height: 42.66px;
-  border: none;
-  background-color: #3653f8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+.button-container {
+            display: flex;
+            gap: 10px; /* Adjust the gap between buttons as needed */
+        }
 
-button .span-mother {
-  display: flex;
-  overflow: hidden;
-}
+        button {
+            font-weight: bold;
+            color: white;
+            border-radius: 2rem;
+            cursor: pointer;
+            width: 95.02px;
+            height: 42.66px;
+            border: none;
+            background-color: #3653f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
+        button .span-mother {
+            display: flex;
+            overflow: hidden;
+        }
 button:hover .span-mother {
   position: absolute;
 }
