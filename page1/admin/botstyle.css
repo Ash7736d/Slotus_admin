@@ -169,6 +169,12 @@ body{
     color: var(--danger);
 }
 
+.content button:focus,
+.content input:focus,
+.content .ui-checkbox:focus {
+    outline: 2px solid #1677ff; /* Customize as needed */
+    outline-offset: 2px;
+
 .content{
     position: relative;
     width: calc(100% - 230px);
