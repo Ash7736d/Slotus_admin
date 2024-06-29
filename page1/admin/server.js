@@ -1,3 +1,17 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const checkboxes = document.querySelectorAll('.ui-checkbox');
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                checkboxes.forEach(cb => {
+                    if (cb !== this) cb.checked = false;
+                });
+            }
+        });
+    });
+});
+
 async function addBalance() {
     const userId = document.getElementById('userId').value.trim();
     const amount = parseInt(document.getElementById('amount').value.trim());
