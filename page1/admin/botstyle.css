@@ -829,6 +829,23 @@ button .span-mother2 span:nth-child(6) {
   transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
 }
 
+/* Additional styles for alignment */
+
+.checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap between checkboxes as needed */
+}
+
+.checkbox-container p {
+    margin: 0;
+    display: flex;
+    align-items: center; /* Ensures the text and checkbox are vertically aligned */
+}
+
+.checkbox-container input {
+    margin-right: 5px; /* Adjust the space between the checkbox and the text as needed */
+}
 .ui-checkbox::before {
   top: 40%;
   left: 50%;
