@@ -799,7 +799,8 @@ button .span-mother2 span:nth-child(6) {
   -webkit-appearance: none;
   -moz-appearance: none;
   gap: 5px;
-  margin-top: 5px; 
+  margin-top: 5px;
+  margin-bottom: 5px;
   appearance: none;
   width: var(--checkbox-diameter);
   height: var(--checkbox-diameter);
