@@ -630,6 +630,7 @@ body{
         button {
             font-weight: bold;
             color: white;
+	    margin-top: 3px;
             border-radius: 2rem;
             cursor: pointer;
             width: 95.02px;
@@ -798,9 +799,7 @@ button .span-mother2 span:nth-child(6) {
 .ui-checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
-  gap: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 3px;
   appearance: none;
   width: var(--checkbox-diameter);
   height: var(--checkbox-diameter);
