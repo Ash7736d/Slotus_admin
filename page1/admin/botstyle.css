@@ -899,7 +899,8 @@ button .span-mother2 span:nth-child(6) {
   display: inline-block;
   cursor: pointer;
   font-family: "Arial", sans-serif;
-  margin-left: 150px;
+  margin-left: 230px;
+  margin-top: 50px; 
 }
 
 .tooltip:hover .tooltiptext {
