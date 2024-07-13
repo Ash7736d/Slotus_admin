@@ -1,17 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const checkboxes = document.querySelectorAll('.ui-checkbox');
-
-    checkboxes.forEach(checkbox => {
-        checkbox.addEventListener('change', function() {
-            if (this.checked) {
-                checkboxes.forEach(cb => {
-                    if (cb !== this) cb.checked = false;
-                });
-            }
-        });
-    });
-});
-
 async function addBalance() {
     const userId = document.getElementById('userId').value.trim();
     const amount = parseInt(document.getElementById('amount').value.trim());
@@ -21,27 +7,29 @@ async function addBalance() {
         return;
     }
 
-    const API_KEY = 'j8Mv7yFEJRvvRmEhmZJ5DmruVIHWTRdNpKdkMTJvsVSGBybnW0v2I72ONxQsLWmw';
-
     try {
-        const response = await fetch('https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-yhwxffq/endpoint/addBalance', {
+        const response = await fetch('http://192.168.100.12:4000/updateUserBalance', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
-                'api-key': API_KEY,
+                'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ userId, amount }),
+            body: JSON.stringify({ userId, amount })
         });
 
         const result = await response.json();
+        const resultElement = document.getElementById("result");
+
         if (response.ok) {
-            alert(result.message);
+            resultElement.textContent = result.message;
+            resultElement.style.color = "green";
         } else {
             console.error('Error adding balance:', result);
-            alert(`Error: ${result.message}`);
+            resultElement.textContent = `Error: ${result.message}`;
+            resultElement.style.color = "red";
         }
     } catch (error) {
         console.error('Error adding balance:', error);
-        alert('There was an error adding balance. Please try again later.');
+        document.getElementById("result").textContent = "There was an error adding balance. Please try again later.";
+        document.getElementById("result").style.color = "red";
     }
 }
